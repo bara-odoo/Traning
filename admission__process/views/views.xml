@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="../traning/admission__process.list">
+      <field name="name">../traning/Admission_Process list</field>
+      <field name="model">../traning/admission__process.../traning/admission__process</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="../traning/admission__process.action_window">
+      <field name="name">../traning/Admission_Process window</field>
+      <field name="res_model">../traning/admission__process.../traning/admission__process</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="../traning/admission__process.action_server">
+      <field name="name">../traning/Admission_Process server</field>
+      <field name="model_id" ref="model_../traning/admission__process_../traning/admission__process"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="../traning/Admission_Process" id="../traning/admission__process.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="../traning/admission__process.menu_1" parent="../traning/admission__process.menu_root"/>
+    <menuitem name="Menu 2" id="../traning/admission__process.menu_2" parent="../traning/admission__process.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="../traning/admission__process.menu_1_list" parent="../traning/admission__process.menu_1"
+              action="../traning/admission__process.action_window"/>
+    <menuitem name="Server to list" id="../traning/admission__process" parent="../traning/admission__process.menu_2"
+              action="../traning/admission__process.action_server"/>
+-->
+  </data>
+</odoo>

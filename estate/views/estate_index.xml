@@ -1,0 +1,37 @@
+<odoo>
+    <template id="index">
+        <t t-call="website.layout">
+        <t t-set="title">My Estate</t>
+            <div class="oe_structure">
+                <div class="container">
+                    <table class="table">
+                        <tr>
+                            <th>Name</th>
+                            <th>Expected Price</th>
+                        </tr>
+                        <t t-foreach="properties" t-as="record">
+                            <tr>
+                                <td><t t-esc="record.name"/></td>
+                                <td><t t-esc="record.expected_price"/></td>
+
+                            </tr>
+                            <br/>
+                        </t>
+                    </table>
+                </div>
+            </div>
+        </t>
+
+        <!-- <title>My Estate Page</title>
+                <h1>Hello World</h1>
+                <t t-foreach="data" t-as="n">
+                    <i><t t-esc="n"/></i>
+                    <br/>
+                </t>
+                <t t-foreach="properties" t-as="record">
+                    <i><t t-esc="record.name"/></i>
+                    <br/>
+                </t>  -->
+            
+    </template>
+</odoo>
